@@ -3,258 +3,270 @@ const IMG_URL =
 
 export const correctObjects = [
   {
-    sentence: "hat eine Sparschwein.", //"has a piggy bank.",
-    img: `${IMG_URL}piggy-bank.jpg`
+    sentence: "tiene una hucha.", //"has a piggy bank.",
+    img: `${IMG_URL}piggy-bank.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat einen Mülleimer.", //"has a trash can.",
-    img: `${IMG_URL}trash-can.jpg`
+    sentence: "tiene una papelera.", //"has a trash can.",
+    img: `${IMG_URL}trash-can.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat ein Seil.", //"has a rope.",
-    img: `${IMG_URL}rope.jpg`
+    sentence: "tiene una cuerda.", //"has a rope.",
+    img: `${IMG_URL}rope.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat einen Schlüssel.", //"has a key.",
-    img: `${IMG_URL}key.jpg`
+    sentence: "tiene una llave.", //"has a key.",
+    img: `${IMG_URL}key.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat einen Regenschirm.", //"has an umbrella.",
-    img: `${IMG_URL}umbrella.jpg`
+    sentence: "tiene un paraguas.", //"has an umbrella.",
+    img: `${IMG_URL}umbrella.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat eine Brille.", //"has glasses.",
-    img: `${IMG_URL}glasses.jpg`
+    sentence: "tiene unas gafas.", //"has glasses.",
+    img: `${IMG_URL}glasses.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat eine Banane.", //has a banana.",
-    img: `${IMG_URL}banana.jpg`
+    sentence: "tiene un plátano.", //has a banana.",
+    img: `${IMG_URL}banana.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat einen Taschenrechner.", //"has a calculator.",
-    img: `${IMG_URL}calculator.jpg`
+    sentence: "tiene una calculadora.", //"has a calculator.",
+    img: `${IMG_URL}calculator.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat eine Schere.", //"has scissors.",
-    img: `${IMG_URL}scissors.jpg`
+    sentence: "tiene unas tijeras.", //"has scissors.",
+    img: `${IMG_URL}scissors.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat eine Haarbürste.", //"has a hairbrush.",
-    img: `${IMG_URL}hairbrush.jpg`
+    sentence: "tiene un cepillo.", //"has a hairbrush.",
+    img: `${IMG_URL}hairbrush.jpg`,
+    correct_response: "a"
   },
   {
-    sentence: "hat eine Lupe.", 
+    sentence: "tiene una lupa.", 
     img: `${IMG_URL}magnifying-glass.jpg`, 
-    correct_response: "a",
+    correct_response: "a"
   },
   {
-    sentence: "hat ein Paar Stiefel.", //"has some boots.",
-    img: `${IMG_URL}boots.jpg`
+    sentence: "tiene unas botas.", //"has some boots.",
+    img: `${IMG_URL}boots.jpg`,
+    correct_response: "a"
   },
-  { sentence: "hat eine Gitarre.", //"has a guitar.",
+  { 
+    sentence: "tiene una guitarra.", //"has a guitar.",
     img: `${IMG_URL}guitar.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat Honig.", //"has honey.", 
+    sentence: "tiene miel.", //"has honey.", 
     img: `${IMG_URL}honey.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat ein Mikrofon.", //has a microphone.", 
+    sentence: "tiene un micrófono.", //has a microphone.", 
     img: `${IMG_URL}microphone.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Hammer.", //has a hammer.", 
+    sentence: "tiene un martillo.", //has a hammer.", 
     img: `${IMG_URL}hammer.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat Milch.", //has milk.", 
+    sentence: "tiene leche.", //has milk.", 
     img: `${IMG_URL}milk.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat ein Ei.", //has an egg.", 
+    sentence: "tiene un huevo.", //has an egg.", 
     img: `${IMG_URL}egg.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Hund.", //has a dog.", 
+    sentence: "tiene un perro.", //has a dog.", 
     img: `${IMG_URL}dog.jpg`, 
     correct_response: "a" },
   { 
-    sentence: "hat eine Orange.", //has an orange.", 
+    sentence: "tiene una naranja.", //has an orange.", 
     img: `${IMG_URL}orange.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat Brot.", //has bread.", 
+    sentence: "tiene pan.", //has bread.", 
     img: `${IMG_URL}bread.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat ein Fahrrad.", //has a bicycle.", 
+    sentence: "tiene una bicicleta.", //has a bicycle.", 
     img: `${IMG_URL}bicycle.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat Kaffee.", //has coffee.", 
+    sentence: "tiene café.", //has coffee.", 
     img: `${IMG_URL}coffee.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Luftballon.", //has a balloon.", 
+    sentence: "tiene un globo.", //has a balloon.", 
     img: `${IMG_URL}balloon.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat eine Pizza.", //has a pizza.", 
+    sentence: "tiene una pizza.", //has a pizza.", 
     img: `${IMG_URL}pizza.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat eine Ananas.", //has a pineapple.", 
+    sentence: "tiene una piña.", //has a pineapple.", 
     img: `${IMG_URL}pineapple.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Bildschirm.", //has a screen.", 
+    sentence: "tiene una pantalla.", //has a screen.", 
     img: `${IMG_URL}screen.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Ball.", //has a ball.", 
+    sentence: "tiene una pelota.", //has a ball.", 
     img: `${IMG_URL}ball.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Schmetterling.", //has a butterfly.", 
+    sentence: "tiene una mariposa.", //has a butterfly.", 
     img: `${IMG_URL}butterfly.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat Schokolade.", //has chocolate.", 
+    sentence: "tiene chocolate.", //has chocolate.", 
     img: `${IMG_URL}chocolate.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat eine Münze.", //has a coin.", 
+    sentence: "tiene una moneda.", //has a coin.", 
     img: `${IMG_URL}coin.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Bleistift.", //has a pencil.", 
+    sentence: "tiene un lápiz.", //has a pencil.", 
     img: `${IMG_URL}pencil.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Stuhl.", //has a chair.", 
+    sentence: "tiene una silla.", //has a chair.", 
     img: `${IMG_URL}chair.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Gürtel.", //has a belt.", 
+    sentence: "tiene un cinturón.", //has a belt.", 
     img: `${IMG_URL}belt.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Löffel.", //has a spoon.", 
+    sentence: "tiene una cuchara.", //has a spoon.", 
     img: `${IMG_URL}spoon.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Hut.", //has a hat.", 
+    sentence: "tiene un sombrero.", //has a hat.", 
     img: `${IMG_URL}hat.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat Käse.", //has cheese.", 
+    sentence: "tiene queso.", //has cheese.", 
     img: `${IMG_URL}cheese.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Blumentopf.", //has a flowerpot.", 
+    sentence: "tiene una maceta.", //has a flowerpot.", 
     img: `${IMG_URL}flowerpot.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Milchshake.", //has a milkshake.", 
+    sentence: "tiene un batido.", //has a milkshake.", 
     img: `${IMG_URL}milkshake.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat eine Blume.", //has a flower.", 
+    sentence: "tiene una flor.", //has a flower.", 
     img: `${IMG_URL}flower.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat eine Armbanduhr.", //has a watch.", 
+    sentence: "tiene un reloj de pulsera.", //has a watch.", 
     img: `${IMG_URL}watch.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat eine Tomate.", //has a tomato.", 
+    sentence: "tiene un tomate.", //has a tomato.", 
     img: `${IMG_URL}tomato.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Kürbis.", //has a pumpkin.", 
+    sentence: "tiene una calabaza.", //has a pumpkin.", 
     img: `${IMG_URL}pumpkin.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Würfel.", //has a dice.", 
+    sentence: "tiene un dado.", //has a dice.", 
     img: `${IMG_URL}dice.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat eine Gießkanne.", //has a watering can.", 
+    sentence: "tiene una regadera.", //has a watering can.", 
     img: `${IMG_URL}watering-can.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat ein Notizbuch.", //has a notebook.", 
+    sentence: "tiene una libreta.", //has a notebook.", 
     img: `${IMG_URL}notebook.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat einen Apfel.", //has an apple.", 
+    sentence: "tiene una manzana.", //has an apple.", 
     img: `${IMG_URL}apple.jpg`, 
     correct_response: "a" 
   },
   { 
-    sentence: "hat ein Lineal.", //has a ruler.", 
+    sentence: "tiene una regla.", //has a ruler.", 
     img: `${IMG_URL}ruler.jpg`, 
     correct_response: "a" 
   },
 ];
 
 export const incorrectObjects = [
-  "hat eine Lampe.", //has a lamp.",
-  "hat einen Teppich.", //has a rug.",
-  "hat einen Kühlschrank.", //has a fridge.",
-  "hat eine Pfanne.", //has a frying pan.",
-  "hat ein Kissen.", //has a pillow.",
-  "hat einen Käfig.", //has a cage.",
-  "hat eine Leiter.", //has a ladder.",
-  "hat einen Stock.", //has a cane.",
-  "hat eine Flasche.", //has a bottle.",
-  "hat einen Ventilator.", //has a fan.",
-  "hat einen Koffer.", //has a suitcase.",
-  "hat einen Drucker.", //has a printer.",
-  "hat eine Geldbörse.", //has a wallet.",
-  "hat eine Taschenlampe.", //has a flashlight.",
-  "hat eine Krawatte.", //has a tie.",
-  "hat ein Bügeleisen.", //has an iron.",
-  "hat einen Helm.", //has a helmet.",
-  "hat einen Rucksack.", //has a backpack.",
-  "hat einen Spiegel.", //has a mirror.",
-  "hat einen Hefter.", //has a stapler.",
-  "hat ein Vorhängeschloss.", //has a lock.",
-  "hat einen Besen.", //has a broom.",
-  "hat ein Auto.", //has a car.",
-  "hat eine Schaufel.", //has a shovel.",
-  "hat eine Karte.", //has a map.",
+  "tiene una lámpara.",
+  "tiene una alfombra.",
+  "tiene una nevera.",
+  "tiene una sartén.",
+  "tiene una almohada.",
+  "tiene una jaula.",
+  "tiene una escalera.",
+  "tiene un bastón.",
+  "tiene una botella.",
+  "tiene un ventilador.",
+  "tiene una maleta.",
+  "tiene una impresora.",
+  "tiene una cartera.",
+  "tiene una linterna.",
+  "tiene una corbata.",
+  "tiene una plancha.",
+  "tiene un casco.",
+  "tiene una mochila.",
+  "tiene un espejo.",
+  "tiene una grapadora.",
+  "tiene un candado.",
+  "tiene una escoba.",
+  "tiene un coche.",
+  "tiene una pala.",
+  "tiene un mapa.",
 ];
