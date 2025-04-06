@@ -3,9 +3,9 @@
 //                                                                    //  
 ////////////////////////////////////////////////////////////////////////
 
-import { correctObjects, incorrectObjects } from "../objects.js";
+import { correctObjects, incorrectObjects } from "./objects.js";
 
-// import { createClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
 
 
 /**************************************************************************************/
@@ -26,7 +26,7 @@ if (randomNumber < 0.5) {
 /**************************************************************************************/
 
 const PEOPLE_URL =
-  "https://github.com/saramff/face-images-spanish/blob/master/";
+  "https://raw.githubusercontent.com/saramff/face-images-spanish/refs/heads/master";
 const IMAGES_PER_GENDER = 24;  
 
 // Create pictures arrays for men and women images
@@ -152,7 +152,7 @@ shuffle(peopleSlice);
 /**************************************************************************************/
 
 const NEW_PEOPLE_URL =
-  "https://github.com/saramff/face-images-spanish/blob/master/new-faces/newface_";
+  "https://raw.githubusercontent.com/saramff/face-images-spanish/refs/heads/master/new-faces/newface_";
 const NEW_IMAGES = 48;
 
 // Create pictures array for new images
@@ -561,7 +561,7 @@ let instructionsFacesPresentation = {
   choices: [' '],
   post_trial_gap: 500,
 };
-timeline.push(instructionsObjectsNamePresentation);
+timeline.push(instructionsFacesPresentation);
 
 /* Create stimuli array for faces presentation */
 let face_recognition_stimuli = recognitionFaces.map((face) => {
@@ -609,29 +609,29 @@ timeline.push(test_faces_procedure);
 // /**************************************************************************************/
 
 
-// const supabase = createClient(
-//   import.meta.env.VITE_SUPABASE_URL,
-//   import.meta.env.VITE_SUPABASE_API_KEY
-// );
+const supabase = createClient(
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_API_KEY
+);
 
-// const TABLE_NAME = "experimento_caras_atributos";
+const TABLE_NAME = "experimento_caras_atributos";
 
-// async function saveData(data) {
-//   console.log(data);
-//   const { error } = await supabase.from(TABLE_NAME).insert({ data });
+async function saveData(data) {
+  console.log(data);
+  const { error } = await supabase.from(TABLE_NAME).insert({ data });
 
-//   return { error };
-// }
+  return { error };
+}
 
-// const saveDataBlock = {
-//   type: jsPsychCallFunction,
-//   func: function() {
-//     saveData(jsPsych.data.get())
-//   },
-//   timing_post_trial: 200
-// }
+const saveDataBlock = {
+  type: jsPsychCallFunction,
+  func: function() {
+    saveData(jsPsych.data.get())
+  },
+  timing_post_trial: 200
+}
 
-// timeline.push(saveDataBlock);
+timeline.push(saveDataBlock);
 
 
 
