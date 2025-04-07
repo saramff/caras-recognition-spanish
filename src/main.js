@@ -450,6 +450,7 @@ let instructionsrecognition = {
       <img src='https://raw.githubusercontent.com/saramff/face-recognition-images/refs/heads/master/Example/Teddy.jpg' class="img-instructions" />
     </div>
     <br />
+    <p>Le recomendamos colocar los dedos sobre las teclas ${correctKey.toUpperCase()} y ${incorrectKey.toUpperCase()} durante la tarea para no olvidarlas.</p>
     <p>Cuando esté preparado, pulse la barra espaciadora para empezar.</p>
    `,
   choices: [' '],
@@ -461,13 +462,13 @@ timeline.push(instructionsrecognition);
 let test_objects_stimuli = peopleSlice.map((person) => {
   return {
     noFaceStimulus: `
-      <p class="person-name">Dies ist ${person.name}.</p>
+      <p class="person-name">Es ${person.name}.</p>
       <div class="imgs-container">
         <img class="person-img" src="${person.img}">
       </div>
     `,
     stimulus: `
-    <p class="person-name">Dies ist ${person.name}.</p>
+    <p class="person-name">Es ${person.name}.</p>
     <div class="imgs-container">
       <img class="person-img" src="${person.img}">
       <img class="object-img" src="${person.object.img}">
@@ -540,7 +541,7 @@ let tetris = {
   `,
   post_trial_gap: 500,
   choices: "NO_KEYS", // Prevent key press
-  trial_duration: 1200000, 
+  trial_duration: 120, 
 };
 timeline.push(tetris);
 
